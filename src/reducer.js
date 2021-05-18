@@ -1,7 +1,7 @@
 import { combineReducers } from 'redux'
 
-import todosReducer from './features/todos/todosSlice'
-import filtersReducer from './features/filters/filtersSlice'
+import todosReducer from './reducers/todosSlice'
+import filtersReducer from './reducers/filtersSlice'
 
 const rootReducer = combineReducers({
   // Define a top-level state field named `todos`, handled by `todosReducer`
