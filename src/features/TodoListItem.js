@@ -36,7 +36,7 @@ const TodoListItem = ({ todo }) => {
 
   return (
     <li>
-      <div className="view">
+      <div className="view"  >
         <div className="segment label">
           <input
             className="toggle"
@@ -44,7 +44,7 @@ const TodoListItem = ({ todo }) => {
             checked={completed}
             onChange={handleCompletedChanged}
           />
-          <div className="todo-text">{text}</div>
+          <div className="todo-text" style={{ backgroundColor:color }} >{text}</div>
         </div>
         <div className="segment buttons">
           <select
