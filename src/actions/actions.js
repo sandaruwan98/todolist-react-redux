@@ -6,3 +6,12 @@ export const addTodoAction = (text) => {
     }
 }
 
+
+export const DELETETODOACTION = 'DELETETODOACTION'
+export const deleteTodoAction = (id) => {
+    return {
+        type: DELETETODOACTION,
+        payload: id
+    }
+}
+

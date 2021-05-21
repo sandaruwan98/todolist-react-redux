@@ -5,12 +5,13 @@ import { ReactComponent as TimesSolid } from './todos/times-solid.svg'
 
 import { availableColors, capitalize } from './filters/colors'
 
+import {deleteTodoAction} from '../actions/actions'
 
 
 // Destructure `props.id`, since we just need the ID value
 const TodoListItem = ({ todo }) => {
   // Call our `selectTodoById` with the state _and_ the ID value
-  const { text, completed, color } = todo
+  const { id,text, completed, color } = todo
 
   const dispatch = useDispatch()
 
@@ -23,6 +24,7 @@ const TodoListItem = ({ todo }) => {
   }
 
   const onDelete = () => {
+    dispatch(deleteTodoAction(id))
   }
 
   const colorOptions = availableColors.map((c) => (
