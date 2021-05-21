@@ -15,3 +15,11 @@ export const deleteTodoAction = (id) => {
     }
 }
 
+export const CHANGECOLOR_ACTION = 'CHANGECOLOR_ACTION'
+export const changeColorAction = (id,color) => {
+    return {
+        type: CHANGECOLOR_ACTION,
+        payload: {id,color}
+    }
+}
+
