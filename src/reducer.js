@@ -1,11 +1,11 @@
 import { combineReducers } from 'redux'
 
-import todosReducer from './reducers/todosSlice'
-import filtersReducer from './reducers/filtersSlice'
+import todosReducer from './reducers/todosReducer'
+// import filtersReducer from './reducers/filtersSlice'
 
 const reducers = {
   todos: todosReducer,
-  filters: filtersReducer,
+  // filters: filtersReducer,
 }
 
 

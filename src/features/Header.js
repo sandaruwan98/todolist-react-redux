@@ -13,7 +13,7 @@ const Header = () => {
     const trimmedText = text.trim()
     if (e.which === 13 && trimmedText) {
       // Dispatch the "todo added" action with this text
-      dispatch(addTodoAction)
+      dispatch(addTodoAction(trimmedText))
       // And clear out the text input
       setText('')
     }

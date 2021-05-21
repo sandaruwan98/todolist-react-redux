@@ -1,7 +1,8 @@
-const AddTodoAction = 'AddTodoAction'
-const addTodoAction = (text) => {
+export const ADDTODOACTION = 'ADDTODOACTION'
+export const addTodoAction = (text) => {
     return {
-        type: AddTodoAction,
+        type: ADDTODOACTION,
         payload: text
     }
 }
+

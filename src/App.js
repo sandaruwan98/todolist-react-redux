@@ -2,7 +2,7 @@ import React from 'react'
 
 import Header from './features/Header'
 import TodoList from './features/TodoList'
-import Footer from './features/Footer'
+// import Footer from './features/Footer'
 
 function App() {
   return (
@@ -18,7 +18,7 @@ function App() {
           <div className="todoapp">
             <Header />
             <TodoList />
-            <Footer />
+            {/* <Footer /> */}
           </div>
         </section>
       </main>
