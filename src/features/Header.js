@@ -1,8 +1,10 @@
-import React, { useState } from 'react'
-import { useDispatch } from 'react-redux'
+import React, { useState } from 'react';
+import { useDispatch } from 'react-redux';
+import {addTodoAction} from '../actions/actions';
 
 const Header = () => {
   const [text, setText] = useState('')
+  const dispatch = useDispatch()
 
   const handleChange = (e) => setText(e.target.value)
 
@@ -11,7 +13,7 @@ const Header = () => {
     const trimmedText = text.trim()
     if (e.which === 13 && trimmedText) {
       // Dispatch the "todo added" action with this text
-    
+      dispatch(addTodoAction)
       // And clear out the text input
       setText('')
     }
