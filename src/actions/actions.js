@@ -23,3 +23,12 @@ export const changeColorAction = (id,color) => {
     }
 }
 
+
+export const COMPLETETODO_ACTION = 'COMPLETETODO_ACTION'
+export const completeTodoAction = (id) => {
+    return {
+        type: COMPLETETODO_ACTION,
+        payload: id
+    }
+}
+
